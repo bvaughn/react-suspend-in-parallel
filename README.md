@@ -7,8 +7,9 @@ import suspendInParallel from "react-suspend-in-parallel";
 
 function ComponentThatSuspends(props) {
   const [thingOne, thingTwo] = suspendInParallel(
-    fetchThingOne(props.id),
-    fetchThingTwo(props.id)
+    () => fetchThingOne(props.id),
+    () => fetchThingTwo(props.id),
+    // ...
   );
 
   // Render...

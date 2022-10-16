@@ -1,6 +1,6 @@
 {
   "name": "react-suspend-in-parallel",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Utility to run multiple Suspense requests in parallel",
   "main": "dist/suspendInParallel.js",
   "scripts": {
